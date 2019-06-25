@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">News</string>
+    <string name="dummy_author_text">Author:</string>
+    <string name="dummy_author_text_value">N/A</string>
+    <string name="dummy_title_text">Title:</string>
+    <string name="dummy_title_text_value">N/A</string>
+    <string name="dummy_description_text">Description:</string>
+    <string name="dummy_description_text_value">N/A</string>
+    <string name="dummy_content_text">Content:</string>
+    <string name="dummy_content_text_value">N/A</string>
+    <string name="dummy_Url_text">Url:</string>
+    <string name="dummy_Url_text_value">N/A</string>
+    <string name="dummy_Published_text">Published At:</string>
+    <string name="news_feed">News</string>
+    <string name="dummy_Published_text_value">N/A</string>
+    <string name="select_region">Please select country and category.</string>
+    <string name="fetch_news">Fetch News</string>
+    <string name="logo">logo</string>
+    <string name="article_image">article image</string>
+
+</resources>

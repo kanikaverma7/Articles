@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".ui.Categories.CategorySelect"
+                android:background="@color/white">
+
+
+    <ImageView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/selectText"
+            android:src="@drawable/grab_logo"
+            android:contentDescription="@string/logo"/>
+
+    <TextView
+            android:id="@+id/selectText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/select_region"
+            android:layout_above="@+id/inputTexts"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            android:layout_marginTop="@dimen/dimen_10"
+
+    />
+
+    <RelativeLayout
+            android:id="@+id/inputTexts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+        <Spinner
+                android:id="@+id/country"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_40"
+                android:layout_marginLeft="@dimen/marginCategory"
+                android:layout_marginTop="@dimen/marginCategory"
+                android:layout_marginRight="@dimen/marginCategory"
+                android:layout_marginBottom="@dimen/marginCategory"
+                android:background="@drawable/spinnerbackground"/>
+
+        <Spinner
+                android:id="@+id/category"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_40"
+                android:layout_below="@+id/country"
+                android:layout_marginLeft="@dimen/marginCategory"
+                android:layout_marginRight="@dimen/marginCategory"
+                android:layout_marginBottom="@dimen/marginCategory"
+                android:background="@drawable/spinnerbackground"/>
+    </RelativeLayout>
+
+    <Button
+            android:id="@+id/clickEvent"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50"
+            android:layout_below="@+id/inputTexts"
+            android:layout_marginLeft="@dimen/marginCategoryButton"
+            android:layout_marginRight="@dimen/marginCategoryButton"
+            android:background="@drawable/button_background"
+            android:text="@string/fetch_news"
+            android:textColor="@color/white"/>
+
+</RelativeLayout>
